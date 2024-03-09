@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'homepage' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('showGallery') }}
+{% endblock %}
+
+{#
+    the homepage is a special page which displays neither a header nor a footer.
+    this is done with the 'trick' of defining empty Twig blocks without any content
+#}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block body %}
+
+<div class="photo-gallery container">
+            <div class="intro">
+                <h2 class="text-center">Герої нашого двору</h2>
+                <p class="text-center">Борися з <s>хамами</s> порушниками любими законними методами. Побачив порушника - скинь фотку :)</p>
+            </div>
+	    <div class="row mb-4">
+        	<a href="{{ asset('build/images/heroes/hero_1.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 parking-data-toggle-lightbox">
+                    <img src="{{ asset('build/images/heroes/hero_1.jpg') }}" class="img-fluid">
+                </a>
+       		<a href="{{ asset('build/images/heroes/hero_2.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 parking-data-toggle-lightbox">
+                    <img src="{{ asset('build/images/heroes/hero_2.jpg') }}" class="img-fluid">
+                </a>
+                <a href="{{ asset('build/images/heroes/hero_4.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 parking-data-toggle-lightbox">
+                    <img src="{{ asset('build/images/heroes/hero_4.jpg') }}" class="img-fluid">
+                </a>
+            </div>
+            <div class="row">
+                <a href="{{ asset('build/images/heroes/hero_1.jpg') }}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 parking-data-toggle-lightbox">
+                    <img src="{{ asset('build/images/heroes/hero_1.jpg') }}" class="img-fluid">
+                </a>
+             </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,8 @@
+.photo-gallery.container {
+    margin: 7em auto;
+}
+
+.photo-gallery img {
+    height: 100%;
+    object-fit: cover;
+}
