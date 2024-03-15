@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'homepage' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('showDashBoard') }}
+{% endblock %}
+
+{#
+    the homepage is a special page which displays neither a header nor a footer.
+    this is done with the 'trick' of defining empty Twig blocks without any content
+#}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block body %}
+
+<span>show responsibility here </span>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i&display=swap" rel="stylesheet" />
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="visually-hidden">
+                Стоянка у Дворі 
+            </h1>
+
+            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container mt-4 mb-3">
+<div class="fs-2 mb-3 logo"> 
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+  <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+</svg>                    
+		    <a class="navbar-brand me-4 pr-2" href="/">
+                        Стоянка у дворі
+                    </a>
+</div>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#header-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show/Hide navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="header-menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="/create_parking">
+                                    Додати автомобіль
+                                </a>
+			    </li>
+			    <li>
+				<a class="nav-link" href="/parking_show_all">
+                                    Всі автомобілі
+                                </a>
+			    </li>
+		            <li>
+                                <a class="nav-link" href="/gallery">
+                                    Галерея
+                                </a>
+                            </li>
+			    <li>
+                                <a class="nav-link" href="/load_ballance">
+                                    Завантаженість
+                                </a>
+                            </li>
+		             <li>
+                                <a class="nav-link" href="/contact">
+                                    Контакти
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="bg-light border-bottom">
+            </nav>
+        </header>
+
+        <main role="main">
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer class="mt-7 px-3 py-5 text-center text-muted">
+            <p>
+                Conference Guestbook
+            </p>
+            <p>
+                <a href="#" class="text-white">Наверх</a>
+            </p>
+        </footer>
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'homepage' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('showContactForm') }}
+{% endblock %}
+
+{#
+    the homepage is a special page which displays neither a header nor a footer.
+    this is done with the 'trick' of defining empty Twig blocks without any content
+#}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block body %}
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Заповни форму зворотнього зв'язку</h2>
+            <p class="text-center">Кожне повідомлення розглядатиметься у 10-ти денний строк на умовах анонімності.</p>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-10 col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-md-7 d-flex align-items-stretch">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <div id="form-message-warning" class="mb-4"></div>
+                                <div id="form-message-success" class="mb-4">
+                                    Твоє повідомлення відправлено!
+                                </div>
+
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom01" class="form-label">Ім'я</label>
+                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                        <div class="valid-feedback">
+                                            Все добре!
+                                        </div>
+                                            <div class="invalid-feedback">
+                                                Введіть ім'я
+                                            </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom02" class="form-label">Прізвище</label>
+                                        <input type="text" class="form-control" id="validationCustom02" required>
+                                        <div class="valid-feedback">
+                                            Все добре!
+                                        </div>
+                                            <div class="invalid-feedback">
+                                                Введіть прізвище
+                                            </div>
+
+                                    </div>
+                                    
+				    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Повідомлення" required></textarea>
+                                            <div class="valid-feedback">
+                                                Все добре!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Введіть своє повідомлення
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Я розумію що мої персональні дані буде оброблено
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Згода необхідна перед надсиланням форми
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Надіслати</button>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex align-items-stretch">
+                            <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                                <h3 class="mb-4 mt-md-4">Контакти</h3>
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-geo-alt-fill"></i>
+				    </div>
+                                    <div class="text ps-3">
+                                        <p><span>Адреса:</span> Івано-Франківськ, вул. Гаркуші 4, 76018, ОСББ Будинок за
+                                            Цигарок </p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+					<i class="bi bi-send-fill"></i>   
+                                    </div>
+                                    <div class="text ps-3">
+                                        <p>
+                                            <span>Email:</span>
+                                            </br>
+                                            <a href="mailto:info@yoursite.com">bydunok.za.zugarok@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
