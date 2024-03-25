@@ -6,9 +6,9 @@
 # related resources
 
 this project was generated with:
-:black_circle:[Symfony](https://symfony.com/)
-:black_circle:[Mysql](https://www.mysql.com/)
-:black_circle:[PHP](https://www.php.net/)
-:black_circle:[JS](https://uk.javascript.info/)
-:black_circle:[HTML](https://developer.mozilla.org/ru/docs/Web/HTML)
-:black_circle:[CSS](https://developer.mozilla.org/ru/docs/Web/CSS)
+- [Symfony](https://symfony.com/)
+- [Mysql](https://www.mysql.com/)
+- [PHP](https://www.php.net/)
+- [JS](https://uk.javascript.info/)
+- [HTML](https://developer.mozilla.org/ru/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/ru/docs/Web/CSS)
