@@ -1,18 +1,8 @@
 # project decription
 
-car rental system
+:car: car rental system
 
-Оренда автомобіля - це форма користування автомобілем за певну плату протягом певного часу, без необхідності покупки транспортного засобу. Угода оренди автомобіля дозволяє клієнту, будь то фізична особа або компанія, користуватися автомобілем за визначеною ціною та строком, після чого автомобіль повертається власнику або орендодавцю.
-
-В орендну оплату зазвичай включені витрати на користування автомобілем, такі як орендні платежі, страхування, технічний обслуговування та інші додаткові витрати. Оренда автомобіля може бути як довгостроковою (на кілька місяців або навіть років), так і короткостроковою (на декілька днів або тижнів) залежно від потреб клієнта.
-
-Ця форма користування автомобілем має свої переваги, зокрема гнучкість та зручність, відсутність необхідності великих початкових витрат на придбання авто, а також можливість вибору транспортного засобу за потребами та умовами користування.
-
-Оренда автомобіля є популярним рішенням як для бізнесу, так і для приватних осіб, які потребують транспорту на певний термін, але не хочуть або не можуть придбати автомобіль. Вона дозволяє ефективно використовувати ресурси та зменшує витрати на технічне обслуговування, страхування та інші витрати, пов'язані з власністю на автомобіль.
-
-Оренда автомобіля також може бути зручним варіантом для подорожей, відряджень та інших ситуацій, коли потрібен тимчасовий доступ до автотранспорту. Крім того, вона дозволяє клієнтам користуватися різноманітними моделями автомобілів без необхідності власності на них.
-
-Загалом, оренда автомобіля сприяє збільшенню мобільності та зручності переміщення як для бізнесу, так і для особистих потреб, забезпечуючи доступ до транспортного засобу без великих витрат і зобов'язань щодо його власності.
+**`Car Rental`** - ***is a form of using a car for a certain fee for a certain period of time, without the need to purchase a vehicle. A car rental agreement allows the customer, whether an individual or a company, to use the car for a specified price and period, after which the car is returned to the owner or lessor. The rental payment usually includes the costs of using the car, such as rental payments, insurance, maintenance and other additional costs. Renting a car can be both long-term (for several months or even years) and short-term (for several days or weeks) depending on the needs of the client. This form of using a car has its advantages, including flexibility and convenience, the absence of the need for large initial purchase costs car, as well as the possibility of choosing a vehicle according to the needs and conditions of use.Renting a car is a popular solution for both businesses and individuals who need transportation for a certain period of time, but do not want or are unable to purchase a car. It allows for efficient use of resources and reduces maintenance, insurance and other expenses related associated with car ownership.Renting a car can also be a convenient option for trips, business trips, and other situations where temporary access to transportation is needed. In addition, it allows customers to use various models of cars without the need to own them.Overall, leasing a car increases mobility and convenience for both business and personal use, providing access to a vehicle without the high costs and obligations of owning it.***
 # related resources
 
 this project was generated with [Symfony](https://symfony.com/)
