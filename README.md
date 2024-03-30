@@ -7,6 +7,7 @@
 
 this project was generated with:
 - [Symfony](https://symfony.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [Mysql](https://www.mysql.com/)
 - [PHP](https://www.php.net/)
 - [JS](https://uk.javascript.info/)
