@@ -1,4 +1,7 @@
 :root {
-    --header-foter-background-color: #000000;
-    
+    /* general  */
+    --header-footer-background-color: ;
+
+    /* forms */
+    --button-color: #ffffff;
 }
