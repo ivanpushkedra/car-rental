@@ -1,6 +1,6 @@
 <?php
 
-#phpinfo();
+echo("Hello world!");
 
 use App\Kernel;
 
